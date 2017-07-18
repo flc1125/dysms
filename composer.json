@@ -1,6 +1,6 @@
 {
     "name": "flc/dysms",
-    "description": "阿里短信；适用任何PHP项目，包括Laravel、Yii、Thinkphp等...",
+    "description": "阿里短信-适用Laravel、Yii、Thinkphp等任何PHP项目...",
     "keywords": ["阿里短信", "flc", "dysms"],
     "type": "library",
     "license": "MIT",
