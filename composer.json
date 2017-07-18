@@ -1,0 +1,10 @@
+{
+    "name": "flc/dysms",
+    "description": "阿里短信；适用任何PHP项目，包括Laravel、Yii、Thinkphp等...",
+    "keywords": ["阿里短信", "flc", "dysms"],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
