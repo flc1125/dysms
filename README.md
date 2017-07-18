@@ -2,6 +2,12 @@
 
 > 目前仅支持短信发送；文档待整理
 
+## 安装
+
+```shell
+composer require flc/dysms
+```
+
 ## 使用
 
 ```php
