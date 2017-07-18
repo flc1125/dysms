@@ -17,5 +17,4 @@ $sendSms->setTemplateCode('SMS_77670013');
 $sendSms->setTemplateParam(['code' => rand(100000, 999999)]);
 $sendSms->setOutId('demo');
 
-print_r($sendSms);
 print_r($client->execute($sendSms));
