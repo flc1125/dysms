@@ -71,16 +71,13 @@ class Client
         // 签名
         $params['Signature'] = $this->generateSign($params);
 
-        print_r($params);
-
         // 请求数据
         $resp = $this->curl(
             $this->api_uri,
             $params
         );
 
-        return $resp;
-        return $request;
+        return json_decode($resp);
     }
 
     /**
@@ -89,20 +86,6 @@ class Client
      * @return string         
      */
     protected function generateSign($params = [])
-    {
-        if ($this->signatureMethod == 'HMAC-SHA1') {
-            return $this->generateHmacSha1Sign($params);
-        } else {
-            throw new Exception("signatureMethod ERROR...");
-        }
-    }
-
-    /**
-     * 按HMAC-SHA1方式生成签名
-     * @param  array  $params 待签的参数
-     * @return string         
-     */
-    protected function generateHmacSha1Sign($params = [])
     {
         ksort($params);  // 排序
 
@@ -140,14 +123,28 @@ class Client
     {
         return [
             'AccessKeyId'      => $this->config['accessKeyId'],
-            'Timestamp'        => date('Y-m-d\TH:i:s\Z'),
+            'Timestamp'        => $this->getTimestamp(),
             'Format'           => $this->format,
             'SignatureMethod'  => $this->signatureMethod,
             'SignatureVersion' => '1.0',
-            'SignatureNonce'   => Helper::uuid(),
+            'SignatureNonce'   => uniqid(),
             'Version'          => '2017-05-25',
             'RegionId'         => 'cn-hangzhou',
         ];
+    }
+
+    /**
+     * 返回时间格式
+     * @return string 
+     */
+    protected function getTimestamp()
+    {
+        $timezone = date_default_timezone_get();
+        date_default_timezone_set('GMT');
+        $timestamp = date('Y-m-d\TH:i:s\Z');
+        date_default_timezone_set($timezone);
+
+        return $timestamp;
     }
 
     /**
