@@ -1,6 +1,9 @@
 # 阿里短信接口
 
-> 目前仅支持短信发送；文档待整理
+[![Latest Stable Version](https://poser.pugx.org/flc/dysms/v/stable)](https://packagist.org/packages/flc/dysms)
+[![Total Downloads](https://poser.pugx.org/flc/dysms/downloads)](https://packagist.org/packages/flc/dysms)
+![php>=5.4](https://img.shields.io/badge/php->%3D5.4-orange.svg?maxAge=2592000)
+[![License](https://poser.pugx.org/flc/dysms/license)](https://packagist.org/packages/flc/dysms)
 
 ## 安装
 
@@ -30,3 +33,13 @@ $sendSms->setOutId('demo');
 
 print_r($client->execute($sendSms));
 ```
+
+## 支持
+
+- 官方网址： https://www.aliyun.com/product/sms?spm=5176.8142029.388261.339.WL7atM
+- 官方API文档： https://help.aliyun.com/document_detail/55451.html?spm=5176.doc55289.6.556.pMlBIe
+- composer： https://getcomposer.org/
+
+## License
+
+MIT
