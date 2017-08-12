@@ -5,6 +5,8 @@
 ![php>=5.4](https://img.shields.io/badge/php->%3D5.4-orange.svg?maxAge=2592000)
 [![License](https://poser.pugx.org/flc/dysms/license)](https://packagist.org/packages/flc/dysms)
 
+> PS：**阿里大于** [https://github.com/flc1125/alidayu](https://github.com/flc1125/alidayu)
+
 ## 安装
 
 ```shell

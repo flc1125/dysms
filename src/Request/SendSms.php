@@ -54,7 +54,7 @@ class SendSms extends ARequest implements IRequest
      */
     public function setTemplateParam($value = [])
     {
-        $this->params['TemplateParam'] = json_encode($value);
+        $this->params['TemplateParam'] = json_encode($value, JSON_FORCE_OBJECT);
 
         return $this;
     }
