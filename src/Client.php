@@ -95,7 +95,7 @@ class Client
         }
         
         $queryStr = implode('&', $arr);
-        $strToSign = $this->httpMethod . '&%2F&' . $this->percentencode($queryStr);
+        $strToSign = $this->httpMethod . '&%2F&' . $this->percentEncode($queryStr);
 
         return base64_encode(hash_hmac('sha1', $strToSign, $this->config['accessKeySecret'] . '&', true));
     }
