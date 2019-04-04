@@ -4,6 +4,7 @@
 [![Total Downloads](https://poser.pugx.org/flc/dysms/downloads)](https://packagist.org/packages/flc/dysms)
 ![php>=5.4](https://img.shields.io/badge/php->%3D5.4-orange.svg?maxAge=2592000)
 [![License](https://poser.pugx.org/flc/dysms/license)](https://packagist.org/packages/flc/dysms)
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 > PS：**阿里大于** [https://github.com/flc1125/alidayu](https://github.com/flc1125/alidayu)
 
