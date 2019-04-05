@@ -5,6 +5,7 @@
 ![php>=5.4](https://img.shields.io/badge/php->%3D5.4-orange.svg?maxAge=2592000)
 [![License](https://poser.pugx.org/flc/dysms/license)](https://packagist.org/packages/flc/dysms)
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 > PS：**阿里大于** [https://github.com/flc1125/alidayu](https://github.com/flc1125/alidayu)
 
@@ -45,4 +46,5 @@ print_r($client->execute($sendSms));
 
 ## License
 
-MIT
+- MIT
+- Anti 996
