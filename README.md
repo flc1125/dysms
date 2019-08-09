@@ -44,6 +44,17 @@ print_r($client->execute($sendSms));
 - 官方API文档： https://help.aliyun.com/document_detail/55451.html?spm=5176.doc55289.6.556.pMlBIe
 - composer： https://getcomposer.org/
 
+## 捐赠
+
+如果你觉得本扩展对你有帮助，请捐赠以表支持，谢谢~~
+
+<table>
+    <tr>
+        <td align="center"><img src="https://flc.io/static/images/wechat.jpg" width="220"><p>微信</p></td>
+        <td align="center"><img src="https://flc.io/static/images/alipay.jpg" width="220"><p>支付宝</p></td>
+    </tr>
+</table>
+
 ## License
 
 - MIT
